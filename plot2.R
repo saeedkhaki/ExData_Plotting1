@@ -1,13 +1,27 @@
-data = read.table("saeed.txt", sep=";")
+data <- read.table("household_power_consumption.txt", sep=";")
 
-#i seprated it first manaully sorry... i had not had much time only 1 hour 
+data<-data[-1,]   #omiting first row (because this was name)
 
-data$V3<- as.numeric(data$V3)
+#changing columns name to the default
 
-ts1<- ts(data$V3,frequency=365)
+colnames(data) <- c("Date"," Time"," Global_active_power", "Global_reactive_power", "Voltage" ,"Global_intensity", "Sub_metering_1", "Sub_metering_2","Sub_metering_3")
 
-plot(ts1,ylab="Active Global power(killowat)")  
+sub1<-subset(data,Date=="1/2/2007")
 
+sub2<-subset(data,Date=="2/2/2007")
+#this is the final data set
+sub3<-rbind(sub1,sub2)
+
+sub3[,3]<-as.numeric(as.character(sub3[,3]))
+
+
+ts1<- ts(sub3[,3],frequency=1440)
+
+
+plot(ts1,ylab="Global Active Power(kilowatts)")   
 
 dev.copy(png,file="plot 2")
 dev.off()
+
+
+# sorry i could not upload the picure... i cant work with github very well...  please run the code
