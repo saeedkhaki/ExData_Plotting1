@@ -42,7 +42,11 @@ legend("topright",pch=1,col=c('black',"red","blue"),legend=c("Sub_metering_1","S
 dev.copy(png,file="plot 3")
 dev.off()
 
-# sorry i could not upload the picure... i cant work with github very well...  please run the code
+
+# sorry i could not upload the picure... i cant work with github very well...  please run the code...for god sake 
+# I spend two day on this.. but finally i could not upload the PNG files ... I did not have time much time
+
+
 
 
 
