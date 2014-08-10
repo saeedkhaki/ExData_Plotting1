@@ -67,8 +67,13 @@ plot(tg,ylab="Global_reactive_power")
 dev.copy(png,file="plot 4")
 dev.off()
 
+
 # sorry i could not upload the picure... i cant work with github very well...  please run the code...for god sake 
-#i spend two day on this.. but finally i could not upload the PNG files
+# I spend two day on this.. but finally i could not upload the PNG files ... I did not have time much time
+
+
+
+
 
 
 
