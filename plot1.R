@@ -19,7 +19,10 @@ hist(sub3[,3],col="red",main="Global Active Power",xlab="Global Active Power(kil
 dev.copy(png,file="plot 1")
 dev.off()
 
-# sorry i could not upload the picure... i cant work with github very well...  please run the code
+# 
+# sorry i could not upload the picure... i cant work with github very well...  please run the code...for god sake 
+# I spend two day on this.. but finally i could not upload the PNG files
+
 
 
 
